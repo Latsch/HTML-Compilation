@@ -72,6 +72,7 @@ table {
 #nav{
 	height: 45px;
 }
+
 /* Styling for the Sign in Button on the NavBar on Top */
 #signIn{
 	display: inline-block;
@@ -138,6 +139,20 @@ h1{
 	padding: 2px;
 	height:3em;
 	width:12em; 
+	font-weight: bold;
+	color: white;
+	background-color: grey;
+	border-width: 1px;
+	border-style: solid;
+	border-color: grey;
+
+}
+
+#lButton:hover{
+	background-color: white;
+	border-color:grey;
+	color: black;
+	border-radious: 1px;
 }
 
 #rButton{
@@ -145,7 +160,21 @@ h1{
 	padding: 2px;
 	height: 3em;
 	width:12em; 
+	font-weight: bold;
+	color: white;
+	background-color: grey;
+	border-width: 1px;
+	border-style: solid;
+	border-color: grey;
 }
+
+#rButton:hover{
+	background-color: white;
+	border-color:grey;
+	color: black;
+	border-radious: 1px;
+}
+
 
 #footer{
 	width: 100%;
