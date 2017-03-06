@@ -1,4 +1,4 @@
-# WebApplication-Compilation
+# WebDevelopment-Compilation
 
 In this folder are practice projects, all with the goal to learn development of Web-Application/-Development.
 Im using HTML, CSS, JavaScript and GoogleGo for those projects, to get familiar with those technologies.
