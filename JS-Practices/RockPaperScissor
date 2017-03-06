@@ -1,3 +1,9 @@
+/*
+	A really rough and simple version of the Rock,Paper, Scissor game.
+	Lots of improvement possible, but was only writen for a starting point to
+	get to know JavaScript.
+*/
+
 var userChoice = prompt("Do you choose rock, paper or scissors?");
 var computerChoice = Math.random();
 if (computerChoice < 0.34) {
