@@ -84,10 +84,16 @@ h1{
 #sketch{
 	margin: 5px auto;
 	height: 450px;
-	width: 40%;
+	width: 450px;
+	padding: 0;
 	background-color: white;
 	border: 4px solid black;
 	border-radius: 4px;
+}
+
+.pixel{
+	display: inline-block;
+	float: right;
 }
 
 #ctrlButton{
