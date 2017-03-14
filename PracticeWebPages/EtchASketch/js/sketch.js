@@ -1,16 +1,15 @@
 $(document).ready(function(){
-	var rowLength = 45;
-	var containerSize = $('#sketch').innerHeight();
+	rowLength = 45;
+	containerSize = $('#sketch').innerHeight();
 
-	console.log(containerSize);
-	gridBuilder(rowLength, containerSize);
+	gridBuilder();
 	paint();
 
 });
 
-function gridBuilder(pixel, containerSize){
-	var cells = pixel * pixel;
-	var pixelSize = containerSize / pixel ;
+function gridBuilder(){
+	var cells = rowLength * rowLength;
+	var pixelSize = containerSize / rowLength ;
 	for(var i = 0; i < cells; i++){
 		$('#sketch').append('<div class="pixel"></div>');
 	}
@@ -23,4 +22,28 @@ function paint(){
 	$('.pixel').mouseenter(function(){
 		$(this).css("background-color","black");
 	});
+};
+
+function clearWindow(){
+	$('.pixel').css("background-color", "white");
+};
+
+function changeSize(){
+	var newSize = prompt("What new size do you want? (300-600)");
+	containerSize = newSize;
+	clearWindow();
+	$('.pixel').remove();
+	$('#sketch').innerHeight(newSize);
+	$('#sketch').innerWidth(newSize);
+	gridBuilder();
+	paint();
+};
+
+function changeRes(){
+	var newRes = prompt("What new Resolution do you want? (20-70)");
+	rowLength = newRes;
+	clearWindow();
+	$('.pixel').remove();
+	gridBuilder();
+	paint();
 };
